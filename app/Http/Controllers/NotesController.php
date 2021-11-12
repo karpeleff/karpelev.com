@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\TestOutput;
 use Illuminate\Http\Request;
 use App\Models\Note;
 use App\Models\Action;
 use Carbon\Carbon;
 use App\Models\Document;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 class NotesController extends Controller
@@ -126,6 +128,15 @@ public  function apiForm()
         return "Успех";
     }
 //загрузка файла
+
+public function  sendMail()
+{
+    if(Mail::to('alekseykarpelev@gmail.com')->send(new TestOutput());)
+    {
+        echo 'ok';
+    }
+
+}
 
 
 }

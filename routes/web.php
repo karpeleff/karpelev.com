@@ -80,3 +80,7 @@ Route::post('/blog_add_category', 'BlogController@add_category')->name('blog_add
 //portfolio
 Route::get('/portfolio', 'PortfolioController@index')->name('portfolio');
 
+Route::get('/sendmail', 'NotesController@sendMail')->name('sendmail');
+
+
+
