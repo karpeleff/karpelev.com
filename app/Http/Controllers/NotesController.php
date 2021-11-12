@@ -131,9 +131,9 @@ public  function apiForm()
 
 public function  sendMail()
 {
-    if(Mail::to('alekseykarpelev@gmail.com')->send(new TestOutput());)
+    if(Mail::to('alekseykarpelev@gmail.com')->send(new TestOutput()))
     {
-        echo 'ok';
+        logger('mail ok');
     }
 
 }
