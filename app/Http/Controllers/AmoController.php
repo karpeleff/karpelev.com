@@ -10,6 +10,8 @@ class AmoController extends Controller
 
     public  function   amo()
     {
+
+        
         $provider = new AmoCRM([
             'clientId' => 'c9c17064-2a4c-44e7-abd8-b5850e828780',
             'clientSecret' => 'S0F3nlQ91R9txt0sanm04vNxNQlqkJFuSZbxU84jBujsZQYe3e4nMsFFLZbHOzVE',
